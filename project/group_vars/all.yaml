@@ -1,0 +1,10 @@
+---
+
+# These are all the common variables
+
+default_customer_abbrev: "gwtk"
+default_os_ver: "rhel78"
+default_bods_ver: "4200"
+default_cognos_ver: "11.2.2"
+# default_cognos_ver: "11.2.3"
+

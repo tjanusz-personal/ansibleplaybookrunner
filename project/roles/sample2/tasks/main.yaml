@@ -1,0 +1,28 @@
+---
+
+## Sample2 tasks to print out statements for tasks
+
+- name: Debug listing of important variables
+  debug: 
+    msg: "I am inside sample 2 role tasks now"
+
+- name: Throw error if cognos_ver incorrect
+  fail:
+    msg: The system may not be provisioned correctlly.
+  when: default_cognos_ver != "11.2.2"
+
+- name: Throw error on invalid directory
+  get_url:
+    url: http://example.com/path/file.conf
+    dest: /etc/foo.conf
+    mode: '0440'
+  ignore_errors: true
+
+- name: Debug listing of important variables part 2
+  debug: 
+    msg: "Sample2 tasks vars BODS Ver: {{default_bods_ver}} OS Version: {{default_cognos_ver}}"
+
+
+
+
+...

@@ -1,0 +1,18 @@
+---
+
+## Sample1 tasks to print out statements for tasks
+
+- name: Debug listing of important variables
+  debug: 
+    msg: "Customer: {{default_customer_abbrev}} OS Version: {{default_os_ver}}"
+
+
+- name: Debug listing of important variables part 2
+  debug: 
+    msg: "BODS Ver: {{default_bods_ver}} OS Version: {{default_cognos_ver}}"
+
+- name: Simulate longer running job
+  pause:
+    seconds: 60
+
+...

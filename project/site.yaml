@@ -1,0 +1,14 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: run all sample tasks
+  hosts: localhost
+  gather_facts: no
+  connection: local
+
+  roles:
+    - sample1
+    - sample2
+
+
+...

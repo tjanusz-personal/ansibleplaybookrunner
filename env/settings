@@ -1,0 +1,8 @@
+---
+## bump timeout up for our longer running jobs
+idle_timeout: 1200
+# idle_timeout: 1
+job_timeout: 3600
+pexpect_timeout: 10
+suppress_ansible_output: False
+fact_cache_type: 'jsonfile'
